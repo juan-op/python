@@ -1,3 +1,5 @@
+# Basic calculator
+
 def calculator():
     while True:
         print('** Calculator **')

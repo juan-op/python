@@ -2,10 +2,15 @@
 
 def calculator():
     while True:
-        print('** Calculator **')
-        a = int(input('First number: '))
-        c = input('Operation: ')
-        b = int(input('Second number: '))
+        print('<-- Calculator -->')
+        print('- Integers only -')
+        try:
+            a = int(input('First number: '))
+            c = input('Operation: ')
+            b = int(input('Second number: '))
+        except ValueError:
+            print('*Enter a valid operation.*')
+            continue
         if c == '+':
             print(a + b)
         elif c == '-':
@@ -18,11 +23,13 @@ def calculator():
             except ZeroDivisionError:
                 print('Cannot divide by 0.')
         else:
-            print('Enter a valid operation.')
+            print('*Enter a valid operation.*')
+
         keep = input('Continue? Y/N: ').upper()
         if keep != 'Y':
             print('Exit.')
             break
-
+            
 
 calculator()
+        

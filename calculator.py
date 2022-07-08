@@ -22,9 +22,10 @@ def calculator():
                 print(a / b)
             except ZeroDivisionError:
                 print('Cannot divide by 0.')
+                continue
         else:
             print('*Enter a valid operation.*')
-
+            continue
         keep = input('Continue? Y/N: ').upper()
         if keep != 'Y':
             print('Exit.')

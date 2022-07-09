@@ -1,6 +1,8 @@
-# Basic calculator
-
 def calculator():
+    """
+    Simple calculator, takes three inputs: two numbers and the operator. 
+    Only works with integers.    
+    """
     while True:
         print('<-- Calculator -->')
         print('- Integers only -')
@@ -30,7 +32,5 @@ def calculator():
         if keep != 'Y':
             print('Exit.')
             break
-            
 
-calculator()
         
